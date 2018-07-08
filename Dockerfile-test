@@ -1,0 +1,2 @@
+From alpine
+RUN echo 4G > /sys/fs/cgroup/memory/memory.limit_in_bytes 
