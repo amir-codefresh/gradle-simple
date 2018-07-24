@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/jitpack/gradle-simple.svg)](https://jitpack.io/#jitpack/gradle-simple)
 
-wwa
+wwaa
 
 Example Gradle project producing a single jar. Uses the `maven` plugin to publish the jar to the local repository.
 
