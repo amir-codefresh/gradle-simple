@@ -1,0 +1,17 @@
+apiVersion: v1                                                                                                                                                     
+kind: Service                                                                                                                                                      
+metadata:                                                                                                                                                          
+  name: catcher-service                                                                                                                                            
+spec:                                                                                                                                                              
+  ports:                                                                                                                                                           
+  - port: 80                                                                                                                                                       
+    name: web                                                                                                                                                      
+  clusterIP: None                                                                                                                                                  
+  selector:                                                                                                                                                        
+    app: catcher                                                                                                                                                   
+  template:                                                                                                                                                        
+    spec:                                                                                                                                                          
+      containers:                                                                                                                                                  
+      - image: r.cfcr.io/reduxio1/reduxio/reduxio:master-f573940                                                                                                   
+      imagePullSecrets:                                                                                                                                            
+      - name: codefresh-generated-r.cfcr.io-cfcr-eliran-test
